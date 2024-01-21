@@ -1,12 +1,62 @@
 /* Google fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap');
 
 /* Reset style  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Work Sans', sans-serif;
     font-size: 62.5%;
+}
+/*============ Common style  ============ */
+.container {
+    width: 80%;
+    max-width: 117rem;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+/*============ Header contact bar style  ============ */
+#contactBar {
+    background: #f5f5f5;
+}
+.contact-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.contact-contents .cell-contacts {
+    display: flex;
+    gap: 2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4rem;
+
+}
+.contact-contents .cell-contacts .phone {
+    border-left: .2rem solid #ccc;
+    padding-left: 1.5rem;
+}
+.contact-contents .cell-contacts i {
+    color: #ff5200;
+}
+.contact-contents .cell-contacts .email {
+    border-left: .2rem solid #ccc;
+    padding-left: 1.5rem;
+}
+
+.contact-contents .social-contacts a {
+    font-size: 3rem;
+    color: #000;
+    display: inline-block;
+    padding: 0 1.3rem;
+    border-left: .2rem solid #ccc;
+    transition: .3s ease;
+}
+.contact-contents .social-contacts a:last-child {
+    border-right: .2rem solid #ccc;
+}
+.contact-contents .social-contacts a:hover {
+    color: #ff5200;
 }
